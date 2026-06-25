@@ -17,18 +17,18 @@ export default function CTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
-              href="mailto:ashokchaudhary@example.com"
+              href="mailto:ashokchaudharydm@gmail.com"
               className="btn-primary"
             >
-              ashokchaudhary@example.com
+              ashokchaudharydm@gmail.com
             </a>
             <a
-              href="https://wa.me/919211332552"
+              href="https://wa.me/917081079214"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-white"
             >
-              +91 92113 32552
+              +91 70810 79214
             </a>
           </div>
 

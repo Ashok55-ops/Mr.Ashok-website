@@ -5,7 +5,7 @@ export default function Footer() {
         <p className="font-body font-semibold text-sm text-white">
           Ashok Chaudhary
         </p>
-        <p className="text-xs font-body text-white/30">
+        <p className="text-xs font-body text-white/40">
           © {new Date().getFullYear()} · Delhi, India · All rights reserved
         </p>
         <div className="flex gap-5">
