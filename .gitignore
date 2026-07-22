@@ -1,1 +1,4 @@
 /node_modules
+# Environment variables - NEVER push to GitHub
+backend/.env
+.env
