@@ -41,8 +41,8 @@ export default function CTA() {
     setStatus("sending");
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/contact`, {
-        
+      const response = await fetch(`${(import.meta as any).env.VITE_API_URL || 'http://localhost:5000'}/api/contact`, {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json",
