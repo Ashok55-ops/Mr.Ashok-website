@@ -26,11 +26,11 @@ const submitContact = (req, res) => {
       console.error('🚨 DATABASE QUERY CRASHED:', err.message)
       return res.status(500).json({ success: false, message: 'Database error' })
     }
-    
-    // --- NEW CODE: SEND EMAIL NOTIFICATION ---
+
+        // --- NEW CODE: SEND EMAIL NOTIFICATION ---
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'ashokchaudharydm@gmail.com', // Where you want to receive the leads
+      to: 'ashokchaudharydm@gmail.com, amanchaudharydm@gmail.com', 
       subject: `🚨 New Lead Received from ${name}`,
       text: `You have a new contact form submission:\n\nName: ${name}\nWhatsApp: ${whatsapp}\nMessage: ${message}`
     }
