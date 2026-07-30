@@ -2,14 +2,17 @@ const db = require('../config/db')
 const nodemailer = require('nodemailer')
 require('dotenv').config()
 
-// Configure the email transporter using Gmail
+// Create your custom SMTP transporter layout using your exact parameters
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465, // Use 465 for secure SSL connection to bypass cloud network timeouts
+  secure: true, // true for 465, false for 587
   auth: {
-    user: process.env.EMAIL_USER, // Your Gmail address
-    pass: process.env.EMAIL_PASS  // Your App Password (not your normal password)
+    user: 'ashokchaudharydm@gmail.com',
+    pass: 'amgtisdidmrovbsi' // Your clean 16-character Google app password
   }
 })
+
 
 const submitContact = (req, res) => {
   console.log('Received data:', req.body)
